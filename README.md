@@ -5,6 +5,6 @@
 - training models with optimal hyperparameters from scratch and comparing them on an env (Philipp)
 - using a pybullet env (Philipp)
 
-# Gists
+## Gists
 
 1. Behaviour-mining on BipedalWalker-v2 (https://gist.github.com/philippwulff/0da6a1757e39d251d3dc6fa879538ee7)
