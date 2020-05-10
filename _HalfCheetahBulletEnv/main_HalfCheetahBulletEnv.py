@@ -1,24 +1,22 @@
-# add parent dir to find package. Only needed for source code build, pip install doesn't need it.
-import os, inspect
-
-currentdir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
-parentdir = os.path.dirname(os.path.dirname(currentdir))
-os.sys.path.insert(0, parentdir)
-
 import gym
 from stable_baselines import PPO2
 import numpy as np
-import pybullet_envs
+import pybullet_envs    # import required for access to pybullet env
 import time
+from pathlib import Path
 
-print(np.version.version)
+print('Numpy version: {}'.format(np.version.version))
+# is 1.18.3, needs to be the same as the version used when training the model
+
 
 def main():
     env = gym.make("HalfCheetahBulletEnv-v0")
     env.render(mode="human")
 
     # the model was trained for 2e6 steps with the best hyperperams in a notebook on google colab
-    model = PPO2.load(currentdir + '/PPO2_HalfCheetahBulletEnv')
+    project_dir = Path(__file__).parent.parent
+    print(project_dir)
+    model = PPO2.load(str(project_dir) + '/models/PPO2_HalfCheetahBulletEnv')
     # disable rendering during reset, makes loading much faster
     env.reset()
 
@@ -34,9 +32,10 @@ def main():
             score += reward
             frame += 1
             still_open = env.render("human")
-            if still_open == False:
+            if still_open is False:
                 return
-            if not done: continue
+            if not done:
+                continue
             if restart_delay == 0:
                 print("score=%0.2f in %i frames" % (score, frame))
                 restart_delay = 60 * 2  # 2 sec at 60 fps
