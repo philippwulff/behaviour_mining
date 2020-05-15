@@ -1,5 +1,14 @@
 # behaviour_mining
 
+## Notes on modules:
+### models
+- Contains self-trained model in `.zip` files introduced in the more recent versions of `stable-baselines`
+### rl-baselines-zoo
+- Fork from `rl-baselines-zoo`for access to pretrained models
+### myutils
+- Utils
+- Code from `rl-baselines-zoo.utils` with advanced code for loading pretrained models.
+
 ## Currently working on:
 - testing (and comparing) pretrained stable-baselines models on an env (Ulli)
 - training models with optimal hyperparameters from scratch and comparing them on an env (Philipp)
@@ -12,3 +21,15 @@
 https://colab.research.google.com/gist/ReggaeUlli/e0904f39fe47150f85d3b9172019d6ee/trained_zoo_agents.ipynb
 
 Note: all files create during the notebook run (videos, images, tensorboard) become visible when opened in google colab.
+
+## Dependencies
+
+```
+pip install stable-baselines
+```
+
+for box2d envs:
+```
+brew install swig
+pip install box2d
+pip install box2d-kengz```
