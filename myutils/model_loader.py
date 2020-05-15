@@ -2,31 +2,21 @@ import os
 import sys
 import warnings
 
-# numpy warnings because of tensorflow
-warnings.filterwarnings("ignore", category=FutureWarning, module='tensorflow')
-warnings.filterwarnings("ignore", category=UserWarning, module='gym')
-
-import gym
-##import utils.import_envs  # pytype: disable=import-error
-import numpy as np
 import stable_baselines
 from stable_baselines.common import set_global_seeds
 
 from myutils.utils import ALGOS, create_test_env, get_latest_run_id, get_saved_hyperparams, find_saved_model
-from myutils.utils import StoreDict
 
-# in an IPython notebook call
-# %cd /content/rl-baselines-zoo/utils
-# from utils import ALGOS, create_test_env, get_latest_run_id, get_saved_hyperparams, find_saved_model
-# from utils import StoreDict
-# %cd /content
+# numpy warnings because of tensorflow
+warnings.filterwarnings("ignore", category=FutureWarning, module='tensorflow')
+warnings.filterwarnings("ignore", category=UserWarning, module='gym')
 
 # Fix for breaking change in v2.6.0
 sys.modules['stable_baselines.ddpg.memory'] = stable_baselines.common.buffers
 stable_baselines.common.buffers.Memory = stable_baselines.common.buffers.ReplayBuffer
 
 
-def load_model_and_env_from_rlbz(algo, folder, env_id, n_envs=1, log_dir=''):
+def load_model_and_env_from_rlbz(algo, folder, env_id, n_envs=1, log_dir='', is_atari=False):
     """
     This function loads the pretrained model and environment with all set hyperparameters from the
     rl-baselines-zoo repository. Because the models and their hyperparams are not saved in a .zip format
@@ -36,6 +26,7 @@ def load_model_and_env_from_rlbz(algo, folder, env_id, n_envs=1, log_dir=''):
     Example:
     model, env = load_model_and_env_from_rlbz('ppo2', 'rl-baselines-zoo/trained_agents/', ENV_ID, log_dir='content/')
 
+    :param is_atari: (bool)
     :param algo: (string) algorithm name corresponding to the folder in rl-b-z
     :param folder: (string) directory containing the trained models in the rl-b-z
     :param env_id: (string) name of gym environment
@@ -52,16 +43,10 @@ def load_model_and_env_from_rlbz(algo, folder, env_id, n_envs=1, log_dir=''):
     if algo in ['dqn', 'ddpg', 'sac', 'td3']:
         n_envs = 1
 
-    # set_global_seeds(args.seed)
-
-    # is_atari = 'NoFrameskip' in env_id
-
     stats_path = os.path.join(log_path, env_id)
     hyperparams, stats_path = get_saved_hyperparams(stats_path, test_mode=True)
 
-    # env_kwargs = {} if args.env_kwargs is None else args.env_kwargs
-
-    env = create_test_env(env_id, n_envs=n_envs, is_atari=False,
+    env = create_test_env(env_id, n_envs=n_envs, is_atari=is_atari,
                           stats_path=stats_path, seed=42, log_dir=log_dir,
                           hyperparams=hyperparams)
 

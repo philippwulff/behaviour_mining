@@ -1,19 +1,16 @@
-from myutils.model_loader import load_model_and_env_from_rlbz
-
 import os
+from myutils.model_loader import load_model_and_env_from_rlbz
 
 # Note: To use box2d envs, you need to install box2d box2d-kengz (pip) and swig (apt-get)
 # box2d envs include BipedalWalker-v3, LunarLander-v2, ...
 
 # change working directory for access to folder rl-baselines-zoo
-import os
-print(os.path.abspath(os.curdir))
+print('Current working dir: {}'.format(os.path.abspath(os.curdir)))
 os.chdir("..")
-print(os.path.abspath(os.curdir))
+print('Changed working dir to: {}'.format(os.path.abspath(os.curdir)))
 
 ENV_ID = 'BipedalWalker-v3'
-
-model, env = load_model_and_env_from_rlbz('ppo2', 'rl-baselines-zoo/trained_agents/', ENV_ID, log_dir='log_dir/')
+model, env = load_model_and_env_from_rlbz('acktr', 'rl-baselines-zoo/trained_agents/', ENV_ID, log_dir='log_dir/')
 
 episode_reward = 0
 obs = env.reset()
