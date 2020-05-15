@@ -1,16 +1,9 @@
 # behaviour_mining
 
 ## Notes on modules:
-models
---
-- Contains self-trained model in `.zip` files introduced in the more recent versions of `stable-baselines`
-rl-baselines-zoo
---
-- Fork from `rl-baselines-zoo`for access to pretrained models
-myutils
---
-- Utils
-- Code from `rl-baselines-zoo.utils` with advanced code for loading pretrained models.
+- models: Contains self-trained model in `.zip` files introduced in the more recent versions of `stable-baselines`
+- rl-baselines-zoo: Fork from `rl-baselines-zoo`for access to pretrained models
+- myutils: Utils; Code from `rl-baselines-zoo.utils` with advanced code for loading pretrained models.
 
 ## Currently working on:
 - testing (and comparing) pretrained stable-baselines models on an env (Ulli)
