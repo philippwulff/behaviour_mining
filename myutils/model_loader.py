@@ -12,8 +12,8 @@ warnings.filterwarnings("ignore", category=FutureWarning, module='tensorflow')
 warnings.filterwarnings("ignore", category=UserWarning, module='gym')
 
 # Fix for breaking change in v2.6.0
-sys.modules['stable_baselines.ddpg.memory'] = stable_baselines.common.buffers
-stable_baselines.common.buffers.Memory = stable_baselines.common.buffers.ReplayBuffer
+#sys.modules['stable_baselines.ddpg.memory'] = stable_baselines.common.buffers
+#stable_baselines.common.buffers.Memory = stable_baselines.common.buffers.ReplayBuffer
 
 
 def load_model_and_env_from_rlbz(algo, folder, env_id, n_envs=1, log_dir='', is_atari=False):

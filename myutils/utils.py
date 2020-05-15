@@ -90,9 +90,9 @@ def get_wrapper_class(hyperparams):
     env_wrapper: gym_minigrid.wrappers.FlatObsWrapper
     for multiple, specify a list:
     env_wrapper:
-        - utils.wrappers.DoneOnSuccessWrapper:
+        - myutils.wrappers.DoneOnSuccessWrapper:
             reward_offset: 1.0
-        - utils.wrappers.TimeFeatureWrapper
+        - myutils.wrappers.TimeFeatureWrapper
     :param hyperparams: (dict)
     :return: a subclass of gym.Wrapper (class object) you can use to
              create another Gym env giving an original env.
