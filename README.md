@@ -16,7 +16,7 @@
 2. Behaivor mining on pretrained models from the rl zoo:
 https://colab.research.google.com/gist/ReggaeUlli/e0904f39fe47150f85d3b9172019d6ee/trained_zoo_agents.ipynb
 
-Note: all files create during the notebook run (videos, images, tensorboard) become visible when opened in google colab.
+Note: all files created during the notebook run (videos, images, tensorboard) become visible when opened in google colab.
 
 ## Dependencies
 
