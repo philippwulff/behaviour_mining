@@ -7,9 +7,8 @@
 - myutils: Utils; Code from `rl-baselines-zoo.utils` with advanced code for loading pretrained models.
 
 ## Currently working on:
-- testing (and comparing) pretrained stable-baselines models on an env (Ulli)
-- training models with optimal hyperparameters from scratch and comparing them on an env (Philipp)
-- using a pybullet env (Philipp)
+- the data recording script (Ulli)
+- analysing already recorded data (Philipp)
 
 ## Gists
 
