@@ -28,7 +28,8 @@ for box2d envs:
 ```
 brew install swig
 pip install box2d
-pip install box2d-kengz```
+pip install box2d-kengz
+```
 
 ## Mentions
 
