@@ -29,3 +29,7 @@ for box2d envs:
 brew install swig
 pip install box2d
 pip install box2d-kengz```
+
+## Mentions
+
+https://github.com/araffin/rl-baselines-zoo
