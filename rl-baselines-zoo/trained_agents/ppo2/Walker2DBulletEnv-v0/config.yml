@@ -2,7 +2,7 @@
 - - [cliprange, 0.2]
   - [cliprange_vf, -1]
   - [ent_coef, 0.0]
-  - [env_wrapper, utils.wrappers.TimeFeatureWrapper]
+  - [env_wrapper, utilsdir.wrappers.TimeFeatureWrapper]
   - [gamma, 0.99]
   - [lam, 0.95]
   - [learning_rate, lin_2.5e-4]
