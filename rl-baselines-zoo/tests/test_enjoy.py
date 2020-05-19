@@ -49,7 +49,7 @@ def test_benchmark():
         '--test-mode'
     ]
 
-    return_code = subprocess.call(['python', '-m', 'utils.benchmark'] + args)
+    return_code = subprocess.call(['python', '-m', 'utilsdir.benchmark'] + args)
     _assert_eq(return_code, 0)
 
 
@@ -61,7 +61,7 @@ def test_record_video():
         '-o', 'logs/tests/videos/'
     ]
 
-    return_code = subprocess.call(['python', '-m', 'utils.record_video'] + args)
+    return_code = subprocess.call(['python', '-m', 'utilsdir.record_video'] + args)
     _assert_eq(return_code, 0)
     video_path = 'logs/tests/videos/ppo2-BipedalWalkerHardcore-v3-step-0-to-step-100.mp4'
     # File is not empty
