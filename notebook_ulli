@@ -14,4 +14,16 @@ The script enjoy.py uses the trained models automatically, you just have to spec
 To the get the data we want we need to make some changes.
 In this file we save the observations as well as the actions and reward after every step the model makes.
 After running the models we want we safe the data in a csv file.
-to analyse the data we use the python libary pandas.
+To analyse the data we use the python libary pandas.
+
+Our next task after generating the data is to find patterns in the data.
+Because it is not usefull to compare the whole datasets of the models we want to extract repetetive patterns in the data.
+This could maybe be a subtask like walking one step or something which will be repeated all over he Episode.
+We can then compare this subtask to the subtask an other agent used to solve the task.
+
+For pattern recognition we tried to look at programms used in the stock market.
+Many traders rely on patterns in the prize curve of their stocks to make predictions.
+Unfortunatly those are always programed to find trading specific patterns and or also always based on a date/time scale.
+Could be complicated to transfer our timesteps based data into that format.
+We came accross the python libary prophet which will try to extract weekly, monthly and annualy patterns in ur data.
+The problem is that the main task of our pattern recognition will also be to realize when a patern starts and not just plot possible patterns in pre arranged timeslots.
