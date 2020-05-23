@@ -1,0 +1,17 @@
+Here i take my notes while working on the project to make it easier to set up the real text we want to submit.
+
+Prep:
+we made ourselfs familiar with the rl zoo and some of its models.
+For running the real code we mainly use google colad for more claculating power and it is easier to reproduce for other people.
+
+
+start:
+Our first real task is to generate data from a different models in the same enviroment.
+We use the different models of the zoo which were trained with different algorithms but on the same enviroment(PPO, a2c, ...).
+to start we used the enviroment bipedalwalker to make it not too complex at the beginning.
+But at the same time it is complex enough to find interesting behaiviors because the trained models ae not perfect like it is often the case with simpler enviroments.
+The script enjoy.py uses the trained models automatically, you just have to specify the model and algorithm you want to use.
+To the get the data we want we need to make some changes.
+In this file we save the observations as well as the actions and reward after every step the model makes.
+After running the models we want we safe the data in a csv file.
+to analyse the data we use the python libary pandas.
