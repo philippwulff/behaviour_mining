@@ -34,3 +34,7 @@ pip install box2d-kengz
 ## Mentions
 
 https://github.com/araffin/rl-baselines-zoo
+
+## Links
+
+- Difference in obs values between v2 and v3 of BipedalWalker: https://github.com/openai/gym/issues/1920
