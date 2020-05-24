@@ -25,5 +25,25 @@ For pattern recognition we tried to look at programms used in the stock market.
 Many traders rely on patterns in the prize curve of their stocks to make predictions.
 Unfortunatly those are always programed to find trading specific patterns and or also always based on a date/time scale.
 Could be complicated to transfer our timesteps based data into that format.
+Another main problem is that we got a multidimensional problem and all stock market solutions are always onedimensional.
+Maybe we can easily overcome this buy rewriting the scripts to use arrays or running it multiple time.
 We came accross the python libary prophet which will try to extract weekly, monthly and annualy patterns in ur data.
 The problem is that the main task of our pattern recognition will also be to realize when a patern starts and not just plot possible patterns in pre arranged timeslots.
+Other programms i came accross had different approches with thir own Problems.
+For example you often have to specify an interval length in which the programm will look for patterns.
+lets say 50 timesteps.
+Then the program starts in the beginning and then saves the next 50 timesteps and then starts the same from timestep 2.
+after that the programm will compare those "sup groups" and compare them to each other.
+The problem here is that we dont know how long such a pattern is and the length can vary between the models.
+
+Often those programms look for local maximums and minimums spikes and if they form specific patterns.
+But i dont really see the use of that for our case.
+
+A more mathematically approach would be if we use a fouriertransformation to find the frequencies of the Data functions and then just look at the lowest frequency.
+Here we come accross some other problems.
+First of all we got the problem that we work with diskrete datapoints and not a function which we would ne for a transformaton.
+If we interpolate our data into a function we got the problem that we get a way to complicated function(if it exists) for all our data points.
+if we smoothen the data out firstly or do not use all data points to not interpolate the complete noise. we come to new problems:
+-is it just noise or are these mini spikes important to fullfill the task?
+
+
