@@ -39,6 +39,10 @@ https://github.com/araffin/rl-baselines-zoo
 
 - Difference in obs values between v2 and v3 of BipedalWalker: https://github.com/openai/gym/issues/1920
 
+Why we should reconsider the way we generate data:
+- issue mentioned here: https://stats.stackexchange.com/questions/360294/how-to-compare-two-different-algorithms-for-deep-rl
+- more extensive on the issue: https://arxiv.org/abs/1709.06560
+
 Possibly interesting for us:
 - https://www.semanticscholar.org/paper/Behaviour-Mining-for-Fraud-Detection-Xu-Sung/aa79583b85fa81d50babf62eb22018b250666501
 - https://www.worldscientific.com/doi/10.1142/S0219622006002271
