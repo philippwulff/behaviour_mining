@@ -38,3 +38,8 @@ https://github.com/araffin/rl-baselines-zoo
 ## Links
 
 - Difference in obs values between v2 and v3 of BipedalWalker: https://github.com/openai/gym/issues/1920
+
+Possibly interesting for us:
+- https://www.semanticscholar.org/paper/Behaviour-Mining-for-Fraud-Detection-Xu-Sung/aa79583b85fa81d50babf62eb22018b250666501
+- https://www.worldscientific.com/doi/10.1142/S0219622006002271
+- https://link.springer.com/article/10.1007/s00354-018-0044-4
