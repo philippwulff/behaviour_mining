@@ -50,3 +50,6 @@ Possibly interesting for us:
 
 This article states that pearson parameters should be used with doubt and KOLMOGOROV SMIRNOV CLUSTERING is superior
 https://towardsdatascience.com/time-series-clustering-and-dimensionality-reduction-5b3b4e84f6a3
+
+Trajectory comparisons of robots
+http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.113.461&rep=rep1&type=pdf
