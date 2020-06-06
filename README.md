@@ -47,3 +47,6 @@ Possibly interesting for us:
 - https://www.semanticscholar.org/paper/Behaviour-Mining-for-Fraud-Detection-Xu-Sung/aa79583b85fa81d50babf62eb22018b250666501
 - https://www.worldscientific.com/doi/10.1142/S0219622006002271
 - https://link.springer.com/article/10.1007/s00354-018-0044-4
+
+This article states that pearson parameters should be used with doubt and KOLMOGOROV SMIRNOV CLUSTERING is superior
+https://towardsdatascience.com/time-series-clustering-and-dimensionality-reduction-5b3b4e84f6a3
