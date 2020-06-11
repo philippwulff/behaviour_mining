@@ -50,3 +50,6 @@ https://towardsdatascience.com/time-series-clustering-and-dimensionality-reducti
 
 Trajectory comparisons of robots
 http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.113.461&rep=rep1&type=pdf
+
+finding patterns using dtw
+https://www.aaai.org/Papers/Workshops/1994/WS-94-03/WS94-03-031.pdf
