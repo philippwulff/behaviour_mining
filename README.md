@@ -53,3 +53,6 @@ http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.113.461&rep=rep1&type=p
 
 finding patterns using dtw
 https://www.aaai.org/Papers/Workshops/1994/WS-94-03/WS94-03-031.pdf
+
+tsClust paper
+https://www.jstatsoft.org/htaccess.php?volume=62&type=i&issue=01&paper=true
