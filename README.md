@@ -59,3 +59,6 @@ https://www.jstatsoft.org/htaccess.php?volume=62&type=i&issue=01&paper=true
 
 dimension reduction time series clustering
 https://link.springer.com/chapter/10.1007/11428862_108
+
+critical look on sts clustering "sts clustering is meaningless"
+https://link.springer.com/article/10.1007/s10115-004-0172-7
