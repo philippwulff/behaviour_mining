@@ -56,3 +56,6 @@ https://www.aaai.org/Papers/Workshops/1994/WS-94-03/WS94-03-031.pdf
 
 tsClust paper
 https://www.jstatsoft.org/htaccess.php?volume=62&type=i&issue=01&paper=true
+
+dimension reduction time series clustering
+https://link.springer.com/chapter/10.1007/11428862_108
