@@ -12,6 +12,8 @@
 2. Behaivor mining on pretrained models from the rl zoo:(https://colab.research.google.com/gist/ReggaeUlli/e0904f39fe47150f85d3b9172019d6ee/trained_zoo_agents.ipynb)
 3. Finding distinguishing features among RL models with a RandomForestClassifier: (https://gist.github.com/philippwulff/4d9a521254f097274b6c83a6511a9832#file-finding-distinguishing-features-among-rl-models-with-a-randomforestclassifier-ipynb)
 4. BipedalWalker-v3-data EDA and FFT + Matrix Profile + Decomposition: https://gist.github.com/philippwulff/353aa5eec175101b28d06f39655abfda#file-bipedalwalker-v3-data-eda-and-fft-matrix-profile-decomposition-ipynb
+5. Feature space clustering
+https://colab.research.google.com/gist/ReggaeUlli/1b5a62d15e43d5e09d4b0a0c7a8c13c1/kopie-von-finding-distinguishing-features-among-rl-models-with-a-randomforestclassifier.ipynb#scrollTo=TAkceYdvGDfs
 
 Note: all files created during the notebook run (videos, images, tensorboard) become visible when opened in google colab.
 
