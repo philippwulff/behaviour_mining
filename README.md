@@ -19,6 +19,8 @@ https://gist.github.com/philippwulff/353aa5eec175101b28d06f39655abfda#file-biped
 https://colab.research.google.com/github/ReggaeUlli/BipedalWalker-gists/blob/master/Clustering_Feature_space.ipynb
 6. sts-clustering with DBSCAN, OPTICS, kmeans, agglomerative on BipedalWalker-v3:
 https://colab.research.google.com/gist/philippwulff/a978f96a73866b73032dd620d90e32ba/sts-clustering-with-dbscan-optics-kmeans-agglomerative-c-on-bipedalwalker-v3-obs_4.ipynb#scrollTo=migcxRI3tl2X
+7. Comparison of STS against consecutive subsequence clustering + windows sizes:
+https://colab.research.google.com/gist/philippwulff/93b5d65b1381caad234ded8106880ece/comparison-of-sts-against-consecutive-subsequence-clustering-windows-sizes.ipynb
 
 Note: all files created during the notebook run (videos, images, tensorboard) become visible when opened in google colab.
 
