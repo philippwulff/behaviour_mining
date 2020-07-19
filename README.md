@@ -43,34 +43,3 @@ pip install box2d-kengz
 ## Mentions
 
 https://github.com/araffin/rl-baselines-zoo
-
-## Links
-
-- Difference in obs values between v2 and v3 of BipedalWalker: https://github.com/openai/gym/issues/1920
-
-Why we should reconsider the way we generate data:
-- issue mentioned here: https://stats.stackexchange.com/questions/360294/how-to-compare-two-different-algorithms-for-deep-rl
-- more extensive on the issue: https://arxiv.org/abs/1709.06560
-
-Possibly interesting for us:
-- https://www.semanticscholar.org/paper/Behaviour-Mining-for-Fraud-Detection-Xu-Sung/aa79583b85fa81d50babf62eb22018b250666501
-- https://www.worldscientific.com/doi/10.1142/S0219622006002271
-- https://link.springer.com/article/10.1007/s00354-018-0044-4
-
-This article states that pearson parameters should be used with doubt and KOLMOGOROV SMIRNOV CLUSTERING is superior
-https://towardsdatascience.com/time-series-clustering-and-dimensionality-reduction-5b3b4e84f6a3
-
-Trajectory comparisons of robots
-http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.113.461&rep=rep1&type=pdf
-
-finding patterns using dtw
-https://www.aaai.org/Papers/Workshops/1994/WS-94-03/WS94-03-031.pdf
-
-tsClust paper
-https://www.jstatsoft.org/htaccess.php?volume=62&type=i&issue=01&paper=true
-
-dimension reduction time series clustering
-https://link.springer.com/chapter/10.1007/11428862_108
-
-critical look on sts clustering "sts clustering is meaningless"
-https://link.springer.com/article/10.1007/s10115-004-0172-7
