@@ -22,6 +22,9 @@ https://colab.research.google.com/gist/philippwulff/a978f96a73866b73032dd620d90e
 7. Comparison of STS against consecutive subsequence clustering + windows sizes:
 https://colab.research.google.com/gist/philippwulff/93b5d65b1381caad234ded8106880ece/comparison-of-sts-against-consecutive-subsequence-clustering-windows-sizes.ipynb
 
+8. Match clusters to videos w=30:
+https://colab.research.google.com/gist/philippwulff/a1a839ba05f93f6284edc95ecb6a9611/match-clusters-to-videos-w-30.ipynb
+
 Note: all files created during the notebook run (videos, images, tensorboard) become visible when opened in google colab.
 
 ## Dependencies
